@@ -1,0 +1,3 @@
+This week focuses on enhancing our project through the addition of two major improvements: a flexbox and a media query. Monday/Tuesday's focus is the flexbox; Thursday we will go over the media query. I will also be making some general adjustments to the website to improve the design and visual clarity.
+
+Most of this week's changes to the website only show up on the storefront.html page. I used flexbox to make the product list horizontal instead of vertical, as well as changing the color, font, and spacing. I also changed the placeholder boxes by rounding the corners, making them larger, and padding them.
