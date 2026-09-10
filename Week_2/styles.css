@@ -1,0 +1,18 @@
+body {
+    color: #111111;
+    background: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: #ee2222;
+}
+
+p {
+    max-width: 520px;
+    line-height: 1.5;
+}
+
+a {
+    color: #850291;
+}
