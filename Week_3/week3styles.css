@@ -95,6 +95,16 @@ Please let me know if I am overusing the AI assistance here. I am trying to deli
     padding: auto 10px auto 0px;
     margin: auto 15px;
 }
+
+@media (max-width: 692px) {
+    .placeholder-box {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        margin: 4px;
+    }
+}
+
 /* New addition for styling the product list as a flex container with spacing between items */
 /* At first, I couldn't notice a difference between my old styling and this addition, but I debugged it by changing the font family and refreshing.
 Thankfully, I just hadn't saved properly, and once I did, both the new spacing and font were applied. */
