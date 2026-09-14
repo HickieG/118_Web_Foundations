@@ -1,0 +1,127 @@
+:root {
+    --main-text-color: #000000;
+    --main-bg-color: #9a9a9a;
+    --main-font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --main-heading-color: #0b5510;
+    --main-paragraph-max-width: 550px;
+    --main-paragraph-line-height: 2;
+    --main-paragraph-padding: 15px;
+}
+
+body { 
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+    font-family: var(--main-font-family);
+    margin: 0;
+    padding: var(--main-paragraph-padding);
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* The body styling pulls from the CSS variables defined in the :root class. */
+
+footer {
+    margin-top: auto;
+}
+
+/* I had AI assistance with certain elements above, from "min-height: 95vh" down to the footer styling. */
+
+h1, h2 {
+    color: var(--main-heading-color);
+}
+
+nav a {
+    font-size: 1.8em;
+    text-decoration: none;
+}
+
+nav a:not(:last-child)::after {
+    content: " | ";
+}
+/* I asked AI to help me with the nav headers because I wanted to add separators between the links, and couldn't figure it out on my own.
+The scope of this addition is definitely above my understanding, but I like how it looks! */
+
+.hero {
+    background-color: #facb24;
+    color: var(--main-text-color);
+    font-family: Times New Roman, serif;
+    padding: 20px;
+    margin: 0 calc(-1 * var(--main-paragraph-padding));
+    margin-top: calc(-1 * var(--main-paragraph-padding));
+}
+/* Hero section for the main landing area; provides a visually distinct introduction to the site. 
+I messed around most with the padding values to try and see how it affects the layout, then added negative margins to counteract the padding for full-width effect with the help of AI. */
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.placeholder-box {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    margin: 8px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px dashed #888888;
+    background-color: #dddddd;
+    color: #555555;
+}
+
+/* I had some AI assistance in creating the product grid and placeholder boxes.
+It might not have been necessary, but it serves as a useful placeholder for when we add actual product images.
+Please let me know if I am overusing the AI assistance here. I am trying to deliberately comment everything it has touched. */
+
+.page {
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 0 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.product-list {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #542583;
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: auto 10px auto 0px;
+    margin: auto 15px;
+}
+/* want to merge product list with button styling later on */
+
+button {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #542583;
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: auto 10px auto 0px;
+    margin: auto 15px;
+    background: #ceafeb;
+}
+
+
+@media (max-width: 692px) {
+    .placeholder-box {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        margin: 4px;
+    }
+}
+
+/* New addition for styling the product list as a flex container with spacing between items */
+/* At first, I couldn't notice a difference between my old styling and this addition, but I debugged it by changing the font family and refreshing.
+Thankfully, I just hadn't saved properly, and once I did, both the new spacing and font were applied. */
+/* I encountered another small bug when changing around the font family for the list items. I was testing the different families recommended by AI
+and forgot to type the final semi-colon, but I could tell that it wasn't being applied correctly because the font and color were not showing up as expected. */
+/* When next working with this product list, my goal is to link each product item to the placeholder box to be more aligned visually. */
+
