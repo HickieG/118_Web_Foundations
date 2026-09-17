@@ -53,13 +53,9 @@ The scope of this addition is definitely above my understanding, but I like how 
 /* Hero section for the main landing area; provides a visually distinct introduction to the site. 
 I messed around most with the padding values to try and see how it affects the layout, then added negative margins to counteract the padding for full-width effect with the help of AI. */
 
-.product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
 .placeholder-box {
+    box-sizing: border-box;
+    /* added this styling to ensure the placeholder box dimensions and layout are consistent and don't overlap */
     width: 150px;
     height: 150px;
     padding: 20px;
@@ -90,21 +86,28 @@ Please let me know if I am overusing the AI assistance here. I am trying to deli
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #542583;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     list-style-type: none;
     padding: auto 10px auto 0px;
     margin: auto 15px;
 }
-/* want to merge product list with button styling later on */
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 150px;
+    text-align: center;
+}
+/* Pairing the button with its box in one flex column keeps them aligned regardless of button text length */
 
 button {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #542583;
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-    padding: auto 10px auto 0px;
-    margin: auto 15px;
+    width: 100%;
+    padding: 8px 4px;
     background: #ceafeb;
 }
 
@@ -115,6 +118,10 @@ button {
         height: 100px;
         padding: 10px;
         margin: 4px;
+    }
+
+    .product-item {
+        width: 100px;
     }
 }
 

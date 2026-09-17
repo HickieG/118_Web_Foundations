@@ -1,11 +1,12 @@
-const placeholder = document.querySelector("#laserPlaceholder");
-const laserButton = document.querySelector("#laserButton");
+const productButtons = document.querySelectorAll(".product-button");
 
-function changePhoto() {
-    placeholder.textContent = "Laser items go here!";
-}
+// Each button's data-target attribute holds the id of the placeholder it should update
+productButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const placeholder = document.getElementById(button.dataset.target);
+        placeholder.textContent = `${button.textContent} go here!`;
+    });
+});
 
-laserButton.addEventListener("click", changePhoto);
-
-/* This script is functioning well for changing the placeholder text when the laser button is clicked. However, further iterations would want to include the other storefront items
-without violating the DRY principle. Further work will need to be done for this JavaScript file to handle other buttons and placeholders efficiently. */
+/* This now handles all three buttons generically instead of one hardcoded pair, keeping the DRY principle intact.
+Linking is done via the data-target attribute on each button matching the id of its placeholder box. */

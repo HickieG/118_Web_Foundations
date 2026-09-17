@@ -11,18 +11,21 @@
     <section>
         <h2>Customized Products</h2>
             <ul class="product-list">
-                <button id="laserButton">LASER-ENGRAVED ITEMS</button>
-                <!-- latest addition -->
-                <li>HANDCRAFTED JEWELRY</li>
-                <li>BOBA TEA SET</li>
-                <!-- Added a class with flex display for this list! -->
+                <li class="product-item">
+                    <button class="product-button" data-target="laserPlaceholder">LASER-ENGRAVED ITEMS</button>
+                    <div id="laserPlaceholder" class="placeholder-box">Product Photo</div>
+                </li>
+                <li class="product-item">
+                    <button class="product-button" data-target="jewelryPlaceholder">HANDCRAFTED JEWELRY</button>
+                    <div id="jewelryPlaceholder" class="placeholder-box">Product Photo</div>
+                </li>
+                <li class="product-item">
+                    <button class="product-button" data-target="bobaPlaceholder">BOBA TEA <br>SET</button>
+                    <!-- Added a break in the text for "boba tea set" making the button two lines and aligning it with the others -->
+                    <div id="bobaPlaceholder" class="placeholder-box">Product Photo</div>
+                </li>
+                <!-- Each item now pairs its button with its own placeholder box, so alignment stays in sync automatically -->
             </ul>
-        <div class="product-grid">
-            <div id="laserPlaceholder" class="placeholder-box">Product Photo</div>
-            <!-- latest addition; later will spread to other placeholders -->
-            <div class="placeholder-box">Product Photo</div>
-            <div class="placeholder-box">Product Photo</div>
-        </div>
         <script src="webpagejava.js"></script>
     </section>
 </body>
