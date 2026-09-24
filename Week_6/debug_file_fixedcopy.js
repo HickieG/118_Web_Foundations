@@ -1,5 +1,5 @@
 const button = document.querySelector("#statusButton");
-const statusMessage = document.querySelector("#statusMsg");
+const statusMessage = document.querySelector("#statusMessage");
 // 3rd bug: The ID used here does not match the ID in the HTML file; it should be "statusMessage" instead of "statusMsg"
 
 function showStatus() {
