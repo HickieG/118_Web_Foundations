@@ -1,5 +1,12 @@
 This week I am updating my previous week's first webpage, along with its storefront and about pages. The main purpose of this is to make them look much more aesthetically pleasing through CSS styling. I hope to add some .root overarching structure, some styled boxes, a hero section on the homepage, and general touch-ups to the look of week 1's website.
 
-Reflection on Styling & Visual Design Lab: The jump between last week's first website and this week's CSS styling is night and day. The fonts, colors and spacing have all vastly improved; not to mention the added hero section and placeholder boxes for product images. CSS is a very fun tool to mess around with! In terms of readability, the sections flow between one another a lot more seamlessly. It may not look like a fully professional website yet, but it is leagues ahead of what it was just a week ago. Usability did not change too much; I think the most progress I did there was enlarge the links to the other pages. 
+Reflection on Styling & Visual Design Lab: The jump between last week's first website and this week's CSS styling is night and day. The fonts, colors and spacing have all vastly improved; not to mention the added hero section and placeholder boxes for product images. CSS is a very fun tool to mess around with! In terms of readability, the sections flow between one another a lot more seamlessly. It may not look like a fully professional website yet, but it is leagues ahead of what it was just a week ago. Usability did not change too much; I think the most progress I did there was enlarge the links to the other pages.
 
 I have to admit though, I used the AI within VS Code quite liberally (Claude Sonnet 5), and believe I may have gone a bit overboard. There were a few concepts that it introduced that I was completely oblivious to, for example line 39 in the week2styles.css reads "nav a:not(:last-child)::after". This delineation was a bit alien to me, and all I had prompted the AI for was a spacing between my href links using this bracket: |. It seems quite handy though, as it will add the bracket spacing for any new links I may put onto the website. Overall, my biggest question is if I am using AI appropriately to assist with projects like this or if I am going too far with what I am using it for.
+
+## Instructor comments:
+
+- Suggestion/Improvements: Try to always have the first html labeled `index.html`
+- This is the "default" that browsers will look for when accessing a website.
+- Without it, the browser may not know which file to display first, potentially causing confusion or errors when accessing the website.
+- Use AI to help "explain" concepts when it generates code snippets, and make sure you understand what it is doing and why.
